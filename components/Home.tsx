@@ -10,11 +10,10 @@ import { useSearchParams } from 'next/navigation'
 
 interface Props {
    data:{
-    success:boolean,
     filteredRoomCount:number,
     rooms:IRoom[],
     resPerPage:number, 
-    roosCount:number
+    roomsCount:number
    }
 }
 
@@ -22,7 +21,10 @@ const Home = ({data}:Props) => {
 
   const searchParams = useSearchParams() 
   const location = searchParams.get('location') 
-  const {resPerPage,rooms,filteredRoomCount} = data 
+  const { filteredRoomCount,
+    rooms,
+    resPerPage ,
+    roomsCount} = data 
 
 
 
