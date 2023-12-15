@@ -1,8 +1,6 @@
 import React from 'react'
-import styles from "./page.module.css" 
 import { getAuthHeader } from '@/helpers/authHeaders'
 import Error from '@/app/error'
-import AllRooms from '@/components/admin/AllRooms'
 import UpdateRoom from '@/components/admin/UpdateRoom'
 
 export const metadata = {

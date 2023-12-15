@@ -1,5 +1,4 @@
 import React from 'react'
-import { getAuthHeader } from '@/helpers/authHeaders'
 import Error from '@/app/error'
 import UploadRoomImages from '@/components/admin/UploadRoomImages'
 

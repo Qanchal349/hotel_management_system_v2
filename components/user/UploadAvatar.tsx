@@ -1,6 +1,6 @@
 'use client';
 import { useLazyUpdateSessionQuery, useUploadAvatarMutation } from '@/redux/api/userApi';
-import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { useAppSelector } from '@/redux/hooks';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
@@ -9,8 +9,6 @@ import ButtonLoader from '../layout/ButtonLoader';
 
 
 const UploadAvatar = () => {
-
- const dispatch = useAppDispatch() ;
  const router = useRouter();
 
  const [avatar, setAvatar] = useState("")

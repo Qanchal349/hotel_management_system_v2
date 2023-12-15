@@ -1,5 +1,5 @@
 import dbConnect from "@/backend/config/dbConnect";
-import {getRoomDetails, updateRoom } from "@/backend/controllers/roomControllers";
+import {getRoomDetails} from "@/backend/controllers/roomControllers";
 import { createEdgeRouter } from "next-connect";
 import { NextRequest, NextResponse} from "next/server";
 

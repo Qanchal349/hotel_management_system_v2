@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
 
-// https://github.com/ghulamabbas2/bookitv2-html
 
 interface Props {
    data:{
@@ -21,11 +20,7 @@ const Home = ({data}:Props) => {
 
   const searchParams = useSearchParams() 
   const location = searchParams.get('location') 
-  const { filteredRoomCount,
-    rooms,
-    resPerPage ,
-    roomsCount} = data 
-
+  const { roomsCount,filteredRoomCount,rooms,resPerPage} = data 
 
 
   return (

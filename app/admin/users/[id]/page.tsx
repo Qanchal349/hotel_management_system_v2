@@ -1,7 +1,6 @@
 import React from 'react'
 import { getAuthHeader } from '@/helpers/authHeaders'
 import Error from '@/app/error'
-import AllUsers from '@/components/admin/AllUsers'
 import UpdateUser from '@/components/admin/UpdateUser'
 
 export const metadata = {
