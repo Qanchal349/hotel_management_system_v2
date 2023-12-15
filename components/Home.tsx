@@ -20,7 +20,7 @@ const Home = ({data}:Props) => {
 
   const searchParams = useSearchParams() 
   const location = searchParams.get('location') 
-  const { roomsCount,filteredRoomCount,rooms,resPerPage} = data 
+  const { rooms,filteredRoomCount,resPerPage} = data || {}
 
 
   return (
